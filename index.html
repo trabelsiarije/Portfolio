@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.title">Arije Trabelsi — Étudiante en Business Intelligence</title>
+  <meta name="description" data-i18n-attr="content" data-i18n="meta.description" content="Portfolio d'Arije Trabelsi, étudiante en Business Intelligence à l'ESEN. À la recherche d'un stage PFE de 4 mois à partir de janvier 2027." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" data-i18n-attr="content" data-i18n="meta.ogTitle" content="Arije Trabelsi — Portfolio Business Intelligence" />
+  <meta property="og:description" data-i18n-attr="content" data-i18n="meta.ogDescription" content="Étudiante en Business Intelligence à l'ESEN, à la recherche d'un stage PFE à partir de janvier 2027." />
+
+  <!-- Favicon : initials AT in SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23135e5a'/><text x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-weight='700' font-size='30' fill='%23f6f1ea'>AT</text></svg>" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a href="#about" class="skip-link" data-i18n="a11y.skip">Aller au contenu principal</a>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__brand" aria-label="Arije Trabelsi — accueil">
+        <span class="nav__mark">AT</span>
+        <span class="nav__brand-text">Arije Trabelsi</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#about" data-i18n="nav.about">À propos</a>
+        <a href="#skills" data-i18n="nav.skills">Compétences</a>
+        <a href="#experience" data-i18n="nav.experience">Expérience</a>
+        <a href="#projects" data-i18n="nav.projects">Projets</a>
+        <a href="#certificates" data-i18n="nav.certificates">Certificats</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="nav__right">
+        <button class="lang-toggle" id="langToggle" role="switch" aria-checked="false" aria-label="Changer la langue">
+          <span class="lang-toggle__label lang-toggle__label--fr">FR</span>
+          <span class="lang-toggle__label lang-toggle__label--en">EN</span>
+          <span class="lang-toggle__thumb" aria-hidden="true"></span>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow"><span class="eyebrow__num">00</span><span data-i18n="hero.eyebrow">Portfolio — 2026</span></p>
+          <h1 class="hero__name">
+            <span class="hero__line">Arije</span>
+            <span class="hero__line hero__line--italic">Trabelsi<span class="hero__dot">.</span></span>
+          </h1>
+          <p class="hero__title" data-i18n="hero.title">Étudiante en Business Intelligence</p>
+          <p class="hero__tagline" data-i18n="hero.tagline">À la recherche d'un stage PFE de 4 mois à partir de janvier 2027.</p>
+
+          <div class="hero__actions">
+            <a href="assets/cv/CV_Arije_Trabelsi_FR.pdf" download id="cvDownload" class="btn btn--primary">
+              <span data-i18n="hero.downloadCv">Télécharger mon CV</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            </a>
+            <a href="#projects" class="btn btn--ghost" data-i18n="hero.viewProjects">Voir mes projets</a>
+          </div>
+
+          <ul class="hero__links" aria-label="Social links">
+            <li><a href="https://linkedin.com/in/arijetrabelsi" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/trabelsiarije" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="mailto:erij.trabelsi@esen.tn">erij.trabelsi@esen.tn</a></li>
+          </ul>
+
+          <!-- subtle data motif -->
+          <svg class="hero__chart" viewBox="0 0 400 80" aria-hidden="true" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="chartFade" x1="0" x2="1">
+                <stop offset="0%" stop-color="currentColor" stop-opacity="0"/>
+                <stop offset="50%" stop-color="currentColor" stop-opacity="1"/>
+                <stop offset="100%" stop-color="currentColor" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <path d="M0 60 L40 55 L80 58 L120 42 L160 48 L200 30 L240 36 L280 20 L320 26 L360 14 L400 18" fill="none" stroke="url(#chartFade)" stroke-width="1.5"/>
+            <g class="hero__chart-dots">
+              <circle cx="120" cy="42" r="2"/><circle cx="200" cy="30" r="2"/><circle cx="280" cy="20" r="2"/><circle cx="360" cy="14" r="2.5"/>
+            </g>
+          </svg>
+        </div>
+
+        <aside class="hero__portrait" aria-hidden="true">
+          <div class="portrait__frame">
+            <span class="portrait__shape" aria-hidden="true"></span>
+            <span class="portrait__corner portrait__corner--tl" aria-hidden="true"></span>
+            <span class="portrait__corner portrait__corner--br" aria-hidden="true"></span>
+
+            <div class="portrait__media">
+              <img src="assets/img/portrait.jpg" alt="" loading="eager" decoding="async" />
+              <span class="portrait__grain" aria-hidden="true"></span>
+            </div>
+
+            <svg class="portrait__pulse" viewBox="0 0 120 24" aria-hidden="true" preserveAspectRatio="none">
+              <path d="M0 12 L18 12 L24 4 L32 20 L42 8 L52 12 L120 12" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </aside>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <span data-i18n="hero.scroll">défilez</span>
+        <span class="hero__scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section section--about" id="about">
+      <div class="section__head">
+        <span class="section__num">01</span>
+        <h2 class="section__title" data-i18n="about.title">À propos</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__text">
+          <p class="about__lead" data-i18n="about.lead">Étudiante en troisième année de Licence en Business Intelligence à l'ESEN (École Supérieure de l'Économie Numérique), je suis à la recherche d'un stage de fin d'études (PFE) de 4 mois à partir de janvier 2027, afin de contribuer à un projet décisionnel concret au sein d'une équipe data.</p>
+          <p data-i18n="about.p2">Ce qui me motive au quotidien, c'est transformer des données brutes en décisions utiles : poser les bonnes questions, construire un pipeline fiable, puis livrer un tableau de bord ou un modèle qui change vraiment la façon dont une équipe pilote son activité.</p>
+          <p data-i18n="about.p3">Je travaille avec méthode et curiosité, j'aime documenter mon code et comprendre le métier avant d'ouvrir Power BI. Je cherche une équipe exigeante où apprendre vite, poser des questions, et contribuer à un projet qui a du sens.</p>
+        </div>
+
+        <aside class="about__side">
+          <div class="about__block">
+            <h3 class="about__block-title" data-i18n="about.educationTitle">Formation</h3>
+            <ol class="timeline">
+              <li class="timeline__item">
+                <span class="timeline__year">2024 — <span data-i18n="about.present">présent</span></span>
+                <p class="timeline__place">ESEN</p>
+                <p class="timeline__detail" data-i18n="about.esenDetail">Licence en Business Intelligence — École Supérieure de l'Économie Numérique</p>
+              </li>
+              <li class="timeline__item">
+                <span class="timeline__year">2020 — 2024</span>
+                <p class="timeline__place" data-i18n="about.highschoolPlace">Lycée Medjez El Bab</p>
+                <p class="timeline__detail" data-i18n="about.highschoolDetail">Baccalauréat en Sciences expérimentales</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="about__block">
+            <h3 class="about__block-title" data-i18n="about.languagesTitle">Langues</h3>
+            <ul class="lang-list">
+              <li><span data-i18n="about.langArabic">Arabe</span><em data-i18n="about.langArabicLvl">langue maternelle</em></li>
+              <li><span data-i18n="about.langFrench">Français</span><em data-i18n="about.langFrenchLvl">avancé</em></li>
+              <li><span data-i18n="about.langEnglish">Anglais</span><em data-i18n="about.langEnglishLvl">courant</em></li>
+              <li><span data-i18n="about.langSpanish">Espagnol</span><em data-i18n="about.langSpanishLvl">débutante</em></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--skills" id="skills">
+      <div class="section__head">
+        <span class="section__num">02</span>
+        <h2 class="section__title" data-i18n="skills.title">Compétences</h2>
+      </div>
+
+      <div class="skills__grid" id="skillsGrid"></div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section section--experience" id="experience">
+      <div class="section__head">
+        <span class="section__num">03</span>
+        <h2 class="section__title" data-i18n="experience.title">Expérience</h2>
+      </div>
+
+      <article class="experience">
+        <header class="experience__head">
+          <div>
+            <p class="experience__role" data-i18n="experience.role">Stage d'été — TeachCodeX</p>
+            <p class="experience__meta"><span data-i18n="experience.period">Juillet — Août 2026</span></p>
+          </div>
+          <a href="https://docs.google.com/document/d/1zVx0g5G-sIWgiQEGR_ytllPmWzaypVFm/edit?usp=drive_link&ouid=118130540761596665341&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="btn btn--small" data-i18n="experience.doc">Voir la documentation</a>
+        </header>
+
+        <p class="experience__intro" data-i18n="experience.intro">Développement en binôme de Nexus 4.0, un système décisionnel full-stack : dashboards par rôle, chatbot IA et moteur de rapports.</p>
+
+        <ul class="experience__list">
+          <li data-i18n="experience.b1">Chatbot IA adapté au rôle de l'utilisateur (admin, employé, client), répondant en langage naturel sur les KPIs, tickets et rapports grâce au RAG (BM25 + LLM via l'API Groq).</li>
+          <li data-i18n="experience.b2">Algorithme d'assignation intelligente des tickets : scoring pondéré (charge 60 %, compétence 40 %), priorisation par criticité et ancienneté, recommandations justifiées.</li>
+          <li data-i18n="experience.b3">Moteur de rapports avec FastAPI, SQLAlchemy et PostgreSQL : 5 KPIs alignés sur la norme ISO 9001 avec statut RAG et historique.</li>
+          <li data-i18n="experience.b4">Génération synchrone et asynchrone de rapports PDF et Excel (xhtml2pdf, openpyxl), stockés sur Cloudinary.</li>
+          <li data-i18n="experience.b5">Alertes de risque basées sur un score prédictif, avec notifications in-app et par email (SMTP).</li>
+          <li data-i18n="experience.b6">Sécurisation des routes par authentification JWT et contrôle d'accès par rôle.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section section--projects" id="projects">
+      <div class="section__head">
+        <span class="section__num">04</span>
+        <h2 class="section__title" data-i18n="projects.title">Projets</h2>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Filtres de projets" id="projectFilters">
+        <button class="filter is-active" data-filter="all" role="tab" aria-selected="true" data-i18n="projects.filterAll">Tous</button>
+        <button class="filter" data-filter="bi" role="tab" aria-selected="false" data-i18n="projects.filterBi">BI &amp; Dashboards</button>
+        <button class="filter" data-filter="data" role="tab" aria-selected="false" data-i18n="projects.filterData">Data Analysis</button>
+        <button class="filter" data-filter="web" role="tab" aria-selected="false" data-i18n="projects.filterWeb">Web</button>
+        <button class="filter" data-filter="ia" role="tab" aria-selected="false" data-i18n="projects.filterIa">IA</button>
+      </div>
+
+      <div class="projects" id="projectsGrid"></div>
+    </section>
+
+    <!-- CERTIFICATES -->
+    <section class="section section--certificates" id="certificates">
+      <div class="section__head">
+        <span class="section__num">05</span>
+        <h2 class="section__title" data-i18n="certificates.title">Certificats</h2>
+      </div>
+      <p class="section__lead" data-i18n="certificates.lead">Six certifications DataCamp complétées sur Python, Pandas et SQL. Cliquez sur une carte ou utilisez les flèches pour parcourir la pile.</p>
+
+      <div class="cert-stack" id="certStack" aria-label="Pile de certificats" aria-roledescription="carousel"></div>
+      <div class="cert-nav" aria-label="Navigation des certificats">
+        <button class="cert-nav__btn" id="certPrev" type="button" aria-label="Certificat précédent">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <div class="cert-nav__dots" id="certDots" role="tablist" aria-label="Certificats"></div>
+        <button class="cert-nav__btn" id="certNext" type="button" aria-label="Certificat suivant">
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--contact" id="contact">
+      <div class="section__head">
+        <span class="section__num">06</span>
+        <h2 class="section__title" data-i18n="contact.title">Contact</h2>
+      </div>
+
+      <div class="contact">
+        <p class="contact__lead" data-i18n="contact.lead">N'hésitez pas à me contacter pour toute opportunité — stage, projet, ou simple échange.</p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label class="field__label" for="cf-email" data-i18n="contact.form.emailLabel">Votre email</label>
+            <input class="field__input" type="email" id="cf-email" name="email" required autocomplete="email" />
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="cf-subject" data-i18n="contact.form.subjectLabel">Objet</label>
+            <input class="field__input" type="text" id="cf-subject" name="subject" required />
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="cf-message" data-i18n="contact.form.messageLabel">Message</label>
+            <textarea class="field__input field__input--area" id="cf-message" name="message" rows="6" required></textarea>
+          </div>
+
+          <div class="field field--file">
+            <label class="field__label" for="cf-file" data-i18n="contact.form.fileLabel">Pièce jointe (optionnel)</label>
+            <label class="file-drop" for="cf-file">
+              <input type="file" id="cf-file" name="file" class="file-drop__input" />
+              <span class="file-drop__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.44 11.05 12.25 20.24a6 6 0 0 1-8.49-8.49l9.19-9.19a4 4 0 0 1 5.66 5.66l-9.2 9.19a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+              </span>
+              <span class="file-drop__text" id="cf-file-text" data-i18n="contact.form.filePlaceholder">Choisir un fichier…</span>
+            </label>
+          </div>
+
+          <p class="contact-form__note" data-i18n="contact.form.note">N'hésitez pas à m'envoyer tout type d'opportunité — stage, mission, collaboration ou simple échange.</p>
+
+          <div class="contact-form__actions">
+            <button type="submit" class="btn btn--primary" data-i18n="contact.form.submit">Envoyer le message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__col">
+          <p class="footer__brand">Arije Trabelsi</p>
+          <p class="footer__tag" data-i18n="footer.tag">Étudiante en Business Intelligence — Tunis, Tunisie</p>
+        </div>
+
+        <ul class="footer__contacts">
+          <li>
+            <span class="footer__label" data-i18n="contact.emailLabel">Email</span>
+            <a href="mailto:erij.trabelsi@esen.tn" class="footer__value">erij.trabelsi@esen.tn</a>
+            <button class="copy-btn" id="copyEmail" data-i18n="contact.copy" aria-label="Copier l'email">Copier</button>
+          </li>
+          <li>
+            <span class="footer__label">LinkedIn</span>
+            <a href="https://linkedin.com/in/arijetrabelsi" target="_blank" rel="noopener noreferrer" class="footer__value">linkedin.com/in/arijetrabelsi</a>
+          </li>
+          <li>
+            <span class="footer__label">GitHub</span>
+            <a href="https://github.com/trabelsiarije" target="_blank" rel="noopener noreferrer" class="footer__value">github.com/trabelsiarije</a>
+          </li>
+          <li>
+            <span class="footer__label" data-i18n="contact.locationLabel">Localisation</span>
+            <span class="footer__value" data-i18n="contact.location">Tunis, Tunisie</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Arije Trabelsi</p>
+        <ul class="footer__links">
+          <li><a href="https://linkedin.com/in/arijetrabelsi" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/trabelsiarije" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="mailto:erij.trabelsi@esen.tn">Email</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/translations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
