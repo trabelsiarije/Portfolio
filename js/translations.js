@@ -94,6 +94,12 @@ const TRANSLATIONS = {
       viewGithub: "Voir sur GitHub",
       viewDoc: "Voir la documentation",
       items: {
+        nexus: {
+          title: "Nexus 4.0 — Plateforme décisionnelle full-stack",
+          desc:
+            "Développement en binôme d'une plateforme décisionnelle complète : dashboards par rôle, chatbot IA (RAG — BM25 + LLM via l'API Groq), assignation intelligente des tickets (scoring pondéré 60 % charge / 40 % compétence), moteur de rapports FastAPI + PostgreSQL avec 5 KPIs ISO 9001, génération PDF/Excel sur Cloudinary, alertes de risque prédictives et sécurité JWT par rôle.",
+          category: "BI & Dashboards · IA"
+        },
         sales: {
           title: "Projet BI pour l'analyse des ventes",
           desc:
@@ -272,6 +278,12 @@ const TRANSLATIONS = {
       viewGithub: "View on GitHub",
       viewDoc: "View documentation",
       items: {
+        nexus: {
+          title: "Nexus 4.0 — Full-stack Decision-Support Platform",
+          desc:
+            "Co-developed a full-stack decision-support platform: role-based dashboards, AI chatbot (RAG — BM25 + LLM via the Groq API), smart ticket assignment (weighted scoring 60% workload / 40% skills), FastAPI + PostgreSQL reporting engine with 5 ISO 9001 KPIs, PDF/Excel generation on Cloudinary, predictive risk alerts and role-based JWT security.",
+          category: "BI & Dashboards · AI"
+        },
         sales: {
           title: "Sales Analytics BI Solution",
           desc:
@@ -378,6 +390,12 @@ const SKILLS = [
 ];
 
 const PROJECTS = [
+  {
+    key: "nexus",
+    categories: ["bi", "ia", "web"],
+    tools: ["Python", "FastAPI", "SQLAlchemy", "PostgreSQL", "React.js", "Groq API", "RAG", "JWT", "Cloudinary"],
+    doc: "https://docs.google.com/document/d/1zVx0g5G-sIWgiQEGR_ytllPmWzaypVFm/edit"
+  },
   {
     key: "sales",
     categories: ["bi"],
